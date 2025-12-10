@@ -9,31 +9,45 @@ The attached jupyter notebook files were created in VSCode and Google Colab, whe
 ```
 ds4021-project/
 ├── Data/
-│   ├── train.csv              # Training data used for all model fitting and tuning
-│   └── test.csv               # Held-out test set for final evaluation only
+│   ├── train.csv                 # Training data used for all model fitting and tuning
+│   └── test.csv                  # Held-out test set for final evaluation only
 │
 ├── data_raw/
-│   └── anxiety_depression_data.csv   # Original dataset downloaded from Kaggle
+│   └── anxiety_depression_data.csv   # Original dataset downloaded from Kaggle (in .gitignore)
 │
-├── data_working/
-│   └── ...                    # Intermediate or scratch data files (optional)
+├── data_working/                 # Intermediate or scratch data files (in .gitignore)
 │
 ├── NOTEBOOKS/
-│   ├── 01_eda.ipynb           # Exploratory data analysis and summary statistics
-│   ├── 02_ridge.ipynb         # Penalized linear regression (Ridge)
-│   ├── 03_svm.ipynb           # Support Vector Machine regression
-│   ├── 04_ensemble.ipynb      # Ensemble model (e.g., Random Forest / Gradient Boosting)
-│   ├── 05_nn.ipynb            # Neural network implemented in PyTorch
-│   └── 06_test_evaluation.ipynb   # Final evaluation on the held-out test set
+│   ├── 01_eda.ipynb              # Exploratory data analysis and summary statistics
+│   ├── 02_ridge.ipynb            # Penalized linear regression (Ridge)
+│   ├── 03_svm.ipynb              # Support Vector Machine regression
+│   ├── 04_ensemble.ipynb         # Ensemble model (Random Forest)
+│   ├── 05_nn.ipynb               # Neural network implemented in PyTorch
+│   └── 06_test_evaluation.ipynb  # Final evaluation on held-out test set
 │
 ├── OUTPUT/
-│   └── ...                    # Figures, tables, exported graphics for the report
+│   ├── EDA_age_vs_depression.png
+│   ├── EDA_anxiety_distribution.png
+│   ├── EDA_correlation_heatmap.png
+│   ├── EDA_depression_distribution.png
+│   ├── EDA_education_level_vs_anxiety.png
+│   ├── nn_anxiety_tuning_results.csv
+│   ├── nn_depression_tuning_results.csv
+│   ├── ridge_prediction_depression.png
+│   ├── ridge_prediction_anxiety.png
+│   ├── svm_prediction_depression.png
+│   ├── svm_prediction_anxiety.png
+│   ├── rf_predictions_depression.png
+│   ├── rf_predictions_anxiety.png
+│   ├── nn_predictions_depression.png
+│   └── nn_predictions_anxiety.png
 │
 ├── src/
-│   └── split_data.py          # Script used to create the training and test sets
+│   └── split_data.py             # Script used to create training and test sets
 │
-├── final_report.pdf           # Final written report
-├── README.md                  # Project description, software info, and repository map
-└── .gitignore                 # Files ignored by git
+├── final_report.pdf              # Final written report
+├── README.md                     # Project description, software info, and documentation map
+└── .gitignore                    # Files ignored by git
+
 ```
->>>>>>> ec91dcd49f3bb99f25b1485ff03b3c2752d6e9c0
+
