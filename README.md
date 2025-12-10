@@ -6,7 +6,7 @@ The attached jupyter notebook files were created in VSCode and Google Colab, whe
 
 #### Below is a directory tree showing the structure of this repository and the contents of each folder.
 
-'''
+```
 ds4021-project/
 ├── Data/
 │   ├── train.csv              # Training data used for all model fitting and tuning
@@ -35,4 +35,4 @@ ds4021-project/
 ├── final_report.pdf           # Final written report
 ├── README.md                  # Project description, software info, and repository map
 └── .gitignore                 # Files ignored by git
-'''
+```
